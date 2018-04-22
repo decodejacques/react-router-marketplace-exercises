@@ -27,7 +27,12 @@ let renderAllItems = () => {
 }
 
 let renderSeller = routerData => {
-  return (<Seller id={routerData.match.params.id} />) // the .id is the same as the :id from the Route below. You can give it any name, but they have to match.
+  // the .id is the same as the :id from the Route below. 
+  // You can give it any name, but they have to match.
+  // For example, routerData.match.params.uniqueID would be fine too
+  // But you would have to modify the Route below to /seller/:uniqueID
+  return (<Seller id={routerData.match.params.id} />)
+
 }
 
 class App extends Component {
