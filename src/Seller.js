@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-let sellers = [{
-  name: "Jack Frost",
-  rating: "5 stars"
-},
-{
-  name: "Hank Green",
-  rating: "2 stars"
-}
-]
+
 
 let formatSeller = (seller) => {
   return (<div className="card center">
@@ -23,7 +15,7 @@ let formatSeller = (seller) => {
 class Seller extends Component {
   render() {
     return (
-      <div>{formatSeller(sellers[this.props.id])}</div>
+      <div>{formatSeller(this.props.seller)}</div>
     );
   }
 }
