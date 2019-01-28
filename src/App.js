@@ -7,12 +7,12 @@ import './App.css';
 let initialItems = [{
   description: "Nice boats. 50% off. wow.",
   price: 10000,
-  image: "boat.png",
+  image: "/boat.png",
   sellerId: 0
 }, {
   description: "Lawn chairs",
   price: 50,
-  image: "lawnchair.jpg",
+  image: "/lawnchair.jpg",
   sellerId: 1
 }
 ]
